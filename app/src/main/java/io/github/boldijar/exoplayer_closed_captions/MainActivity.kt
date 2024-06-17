@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity(), Player.Listener,
 
     companion object {
         const val STREAM =
-            "https://stream.mux.com/HDGj01zK01esWsWf9WJj5t5yuXQZJFF6bo.m3u8"
+            "http://x1.xj12.tv:8096/emby/videos/1453516/master.m3u8?DeviceId=e612a1232339da74&MediaSourceId=ec136c06477e60c0ec2d40f5c5c59730&PlaySessionId=12860baa433e4318984b8a695aba5361&api_key=b1005f7843304882ab9e019385fea977&VideoCodec=h264,mpeg2video,hevc&AudioCodec=ac3,aac,mp3&VideoBitrate=616001&AudioBitrate=384000&AudioStreamIndex=1&SubtitleStreamIndex=2&SubtitleMethod=Hls&TranscodingMaxAudioChannels=6&SegmentContainer=m4s,ts&SegmentLength=3&MinSegments=1&BreakOnNonKeyFrames=True&SubtitleStreamIndexes=2,3,4,5,6,7&ManifestSubtitles=vtt&hevc-profile=Main,Main10,Rext&h264-level=51&TranscodeReasons=ContainerBitrateExceedsLimit"
     }
 
     private lateinit var player: ExoPlayer
