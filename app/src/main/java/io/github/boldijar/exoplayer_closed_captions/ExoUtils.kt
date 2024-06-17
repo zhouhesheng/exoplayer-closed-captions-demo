@@ -1,7 +1,7 @@
 package io.github.boldijar.exoplayer_closed_captions
 
-import com.google.android.exoplayer2.C.TRACK_TYPE_TEXT
-import com.google.android.exoplayer2.Tracks
+import androidx.media3.common.C.TRACK_TYPE_TEXT
+import androidx.media3.common.Tracks
 import java.util.*
 
 object ExoUtils {

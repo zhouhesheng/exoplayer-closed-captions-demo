@@ -1,16 +1,17 @@
 package io.github.boldijar.exoplayer_closed_captions
 
+import android.net.Uri
 import android.os.Bundle
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.ListView
 import androidx.appcompat.app.AppCompatActivity
-import com.google.android.exoplayer2.ExoPlayer
-import com.google.android.exoplayer2.MediaItem
-import com.google.android.exoplayer2.Player
-import com.google.android.exoplayer2.Tracks
-import com.google.android.exoplayer2.ui.StyledPlayerView
+import androidx.media3.common.MediaItem
+import androidx.media3.common.Player
+import androidx.media3.common.Tracks
+import androidx.media3.exoplayer.ExoPlayer
+import androidx.media3.ui.PlayerView
 
 
 class MainActivity : AppCompatActivity(), Player.Listener,
@@ -22,7 +23,7 @@ class MainActivity : AppCompatActivity(), Player.Listener,
     }
 
     private lateinit var player: ExoPlayer
-    private lateinit var playerView: StyledPlayerView
+    private lateinit var playerView: PlayerView
     private lateinit var languagesListView: ListView
 
     private var languages: List<Language> = mutableListOf()
@@ -32,7 +33,7 @@ class MainActivity : AppCompatActivity(), Player.Listener,
         playerView.player = null
         playerView.player = player
         playerView.keepScreenOn = true
-        player.setMediaItem(MediaItem.fromUri(STREAM))
+        player.setMediaItem(MediaItem.fromUri(Uri.parse(STREAM)))
         player.playWhenReady = true
         player.prepare()
     }
