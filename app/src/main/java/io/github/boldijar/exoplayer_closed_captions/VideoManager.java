@@ -27,8 +27,8 @@ public class VideoManager {
             for (int i = 0; i < group.length; i++) {
                 // Individual track information.
                 Format trackFormat = group.getFormat(i);
-                Log.d("LOG", String.format("trackId:%s group %s:%s trackType %s label `%s` mime %s isSelected %s isSupported %s",
-                        trackFormat.id, groupIdx, i, trackType, trackFormat.label, trackFormat.sampleMimeType, groupInfo.isTrackSelected(i), groupInfo.isTrackSupported(i)));
+                Log.d("LOG", String.format("trackId:%s group %s:%s trackType %s label `%s` language:%s isSelected %s isSupported %s",
+                        trackFormat.id, groupIdx, i, trackType, trackFormat.label, trackFormat.language, groupInfo.isTrackSelected(i), groupInfo.isTrackSupported(i)));
             }
 
             groupIdx++;
