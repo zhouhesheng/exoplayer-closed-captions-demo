@@ -19,9 +19,9 @@ class MainActivity : AppCompatActivity(), Player.Listener,
 
     companion object {
         // const val STREAM = " http://x1.xj12.tv:8096/videos/1456828/original.mkv?DeviceId=e612a1232339da74&MediaSourceId=64c543cf44410e29b71a3f8a5c8efed2&PlaySessionId=bd881dbc1d674f7db0125de8a557ef8d&api_key=b1005f7843304882ab9e019385fea977"
-        const val STREAM = "http://x1.xj12.tv:8096/emby/videos/1453516/master.m3u8?DeviceId=e612a1232339da74&MediaSourceId=ec136c06477e60c0ec2d40f5c5c59730&PlaySessionId=12860baa433e4318984b8a695aba5361&api_key=b1005f7843304882ab9e019385fea977&VideoCodec=h264,mpeg2video,hevc&AudioCodec=ac3,aac,mp3&VideoBitrate=616001&AudioBitrate=384000&AudioStreamIndex=1&SubtitleStreamIndex=2&SubtitleMethod=Hls&TranscodingMaxAudioChannels=6&SegmentContainer=m4s,ts&SegmentLength=3&MinSegments=1&BreakOnNonKeyFrames=True&SubtitleStreamIndexes=2,3,4,5,6,7&ManifestSubtitles=vtt&hevc-profile=Main,Main10,Rext&h264-level=51&TranscodeReasons=ContainerBitrateExceedsLimit"
-        // h265 stream
-        // const val STREAM = "http://x1.xj12.tv:8096/videos/1453481/original.mkv?DeviceId=739e6fa20a2c8520&MediaSourceId=47cb16d5bedfb91999ab87fea7182eaa&PlaySessionId=40d54b817e974ac0889856eb3db0eb9b&api_key=0b80a05b1ad540469fc4a45b24d9e66c"
+        // const val STREAM = "http://x1.xj12.tv:8096/emby/videos/1453516/master.m3u8?DeviceId=e612a1232339da74&MediaSourceId=ec136c06477e60c0ec2d40f5c5c59730&PlaySessionId=12860baa433e4318984b8a695aba5361&api_key=b1005f7843304882ab9e019385fea977&VideoCodec=h264,mpeg2video,hevc&AudioCodec=ac3,aac,mp3&VideoBitrate=616001&AudioBitrate=384000&AudioStreamIndex=1&SubtitleStreamIndex=2&SubtitleMethod=Hls&TranscodingMaxAudioChannels=6&SegmentContainer=m4s,ts&SegmentLength=3&MinSegments=1&BreakOnNonKeyFrames=True&SubtitleStreamIndexes=2,3,4,5,6,7&ManifestSubtitles=vtt&hevc-profile=Main,Main10,Rext&h264-level=51&TranscodeReasons=ContainerBitrateExceedsLimit"
+        // H265 stream
+        const val STREAM = "http://x1.xj12.tv:8096/videos/1453481/original.mkv?DeviceId=739e6fa20a2c8520&MediaSourceId=47cb16d5bedfb91999ab87fea7182eaa&PlaySessionId=40d54b817e974ac0889856eb3db0eb9b&api_key=0b80a05b1ad540469fc4a45b24d9e66c"
     }
 
     private lateinit var player: ExoPlayer
